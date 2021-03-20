@@ -1,5 +1,10 @@
 {
   "name": "star-wars-universe",
+  "author": {
+    "name": "Caique Meira Oliveira",
+    "email": "caique_m_oliveira@icloud.com",
+    "url": "https://github.com/xguhkaa"
+  },
   "version": "0.1.0",
   "private": true,
   "_id": "star-wars-universe@0.1.0",
