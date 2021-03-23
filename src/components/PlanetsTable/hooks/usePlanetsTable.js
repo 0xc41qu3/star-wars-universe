@@ -29,12 +29,6 @@ const usePlanetsTable = () => {
 
   const filterByName = (event) => setFilterByName(event.target.value);
 
-  const filterByNumericValue = (filter) => setFilterByNumericValue(filter);
-
-  const removeFilterByNumericValue = (column) => removeNumericFilter(column);
-
-  const sort = (order) => setOrder(order);
-
   const avaiableFiltersByNumericValue = filters.filterByNumericValues.reduce(
     (options, existingOption, index) => [
       ...options,
@@ -108,11 +102,11 @@ const usePlanetsTable = () => {
   return {
     avaiableFiltersByNumericValue,
     filterByName,
-    filterByNumericValue,
+    filterByNumericValue: setFilterByNumericValue,
     filters,
     planets: sortedPlanets,
-    removeFilterByNumericValue,
-    sort,
+    removeFilterByNumericValue: removeNumericFilter,
+    sort: setOrder,
     sortableColumns,
   };
 };
