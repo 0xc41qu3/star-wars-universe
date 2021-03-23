@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { Children } from "react";
 import styled from "styled-components";
 import Column from "./components/Column";
@@ -58,5 +59,13 @@ const Table = ({ rows, extractKey, children, className, columnWidth }) => (
     </Content>
   </Wrapper>
 );
+
+Table.propTypes = {
+  rows: PropTypes.arrayOf(PropTypes.object).isRequired,
+  extractKey: PropTypes.func.isRequired,
+  children: PropTypes.element.isRequired,
+  className: PropTypes.string,
+  columnWidth: PropTypes.string,
+};
 
 export default Table;

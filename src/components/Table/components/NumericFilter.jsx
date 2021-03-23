@@ -1,4 +1,5 @@
 import { Trash } from "@styled-icons/bootstrap/Trash";
+import PropTypes from "prop-types";
 import { useState } from "react";
 import styled from "styled-components";
 import { COMPARISON_OPERATOR } from "../utils/constants";
@@ -98,6 +99,13 @@ const NumericFilter = ({ options, onFilter, onStopFiltering, className }) => {
       </DeleteFilterButton>
     </Wrapper>
   );
+};
+
+NumericFilter.propTypes = {
+  options: PropTypes.string.isRequired,
+  onFilter: PropTypes.func.isRequired,
+  onStopFiltering: PropTypes.func.isRequired,
+  className: PropTypes.string,
 };
 
 export default NumericFilter;

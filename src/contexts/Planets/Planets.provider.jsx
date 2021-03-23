@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 import PlanetsContext, { defaultValue } from "./Planets.context";
 
 /**
@@ -62,6 +63,10 @@ const PlanetsProvider = ({ children }) => {
       {children}
     </PlanetsContext.Provider>
   );
+};
+
+PlanetsProvider.propTypes = {
+  children: PropTypes.element.isRequired,
 };
 
 export default PlanetsProvider;

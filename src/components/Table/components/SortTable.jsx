@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { SORT } from "../utils/constants";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const Label = styled.label`
   font-size: 0.875rem;
@@ -77,6 +78,13 @@ const SortTable = ({ columns, onSort, initialColumn, initialSort }) => {
       </div>
     </Wrapper>
   );
+};
+
+SortTable.propTypes = {
+  columns: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onSort: PropTypes.func.isRequired,
+  initialColumn: PropTypes.string.isRequired,
+  initialSort: PropTypes.string.isRequired,
 };
 
 export default SortTable;

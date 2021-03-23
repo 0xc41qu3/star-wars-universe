@@ -4,6 +4,7 @@ dependencies:
   '@testing-library/react': 11.2.5_react-dom@17.0.1+react@17.0.1
   '@testing-library/user-event': 12.8.3
   dayjs: 1.10.4
+  prop-types: 15.7.2
   react: 17.0.1
   react-dom: 17.0.1_react@17.0.1
   react-scripts: 4.0.3_react@17.0.1
@@ -12401,6 +12402,7 @@ specifiers:
   dayjs: ^1.10.4
   eslint-plugin-react: ^7.22.0
   eslint-plugin-react-hooks: ^4.2.0
+  prop-types: ^15.7.2
   react: ^17.0.1
   react-dom: ^17.0.1
   react-scripts: 4.0.3
