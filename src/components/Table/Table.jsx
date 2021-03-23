@@ -1,6 +1,6 @@
 import { Children } from "react";
 import styled from "styled-components";
-import Column from "./Column";
+import Column from "./components/Column";
 
 const Cell = styled.td`
   height: 53px;
